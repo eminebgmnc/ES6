@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const $=(par)=> document.querySelector(par);
+    </script>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        /*function person(par,par2,par3){
+            this.Name=par;
+            this.age=par2;
+            this.weight=par3;
+            this.getName=function(){
+                return this.Name;
+            }
+            var myObject=new person("Emine",25,26);
+            $('#result').innerHTML=myObject.getName();
+        }*/
+    class person{
+        constructor(p1,p2,p3){
+            this.Name=p1;
+            this.age=p2;
+            this.weight=p3;
+        }
+        getName(){
+            return this.Name;
+        }
+        getAge(){
+            return this.age;
+        }
+        getWeight(){
+            return this.weight;
+        }
+    }
+    var myObject=new person("Emine",25,26);
+    $('#result').innerHTML=
+    myObject.getName()+"<br>"+
+    myObject.getAge()+"<br>"+
+    myObject.getWeight()+"<br>";
+    </script>
+</body>
+</html>

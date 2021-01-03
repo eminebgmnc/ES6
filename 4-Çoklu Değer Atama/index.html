@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        let result=document.querySelector("#result");
+        let langs=["Javascript","Angular JS","vue js","NODE Js","PHP","Asp.Net","Html5","CSS3"];
+       // let l1=langs[0];
+       // let l2=langs[1];
+       // let l3=langs[2];
+       // let l4=langs[3];
+       // let l5=langs[4]; bunu böyle uzun yazmaya gerek yok es6 da kolay çoklu dğer atama yöntemi ile olur. 
+       let [l1,,l2,,l3,l4,,l5]=langs;
+        result.innerHTML=l1+"<br>"+l2+"<br>"+l3+"<br>"+l4+"<br>"+l5;
+
+    </script>
+</body>
+</html>

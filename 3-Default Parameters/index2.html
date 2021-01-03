@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        let result=document.querySelector("#result");
+        function sumNumber(num1=0,num2=1){
+            return num1+num2;
+        }
+        result.innerHTML=sumNumber()+"<br>";
+        result.innerHTML+=sumNumber(7)+"<br>";
+        result.innerHTML+=sumNumber(5,4);
+    </script>
+</body>
+</html>

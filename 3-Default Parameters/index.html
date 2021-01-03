@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        function show(r,pi=3.14){ //zaten sabit olan değerler parametrede verilebilir tekrar tekrar çağırmaya gerek yoktur.
+            return pi*r*r;
+        }
+        document.querySelector("#result").innerHTML=show(2);
+    </script>
+</body>
+</html>
